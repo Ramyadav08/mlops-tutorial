@@ -1,0 +1,8 @@
+# for mlflow ui
+first activate the virtual environment
+python3 -m venv venv
+source .venv/bin/activate
+
+for ui
+
+run the command in terminal-> mlflow ui 

@@ -1,0 +1,11 @@
+f=open('file_name', mode)
+r= represent read mode
+w= represent write mode and override whole file contect
+
+#a = open for write and append end of the file if it exists otherwise create a new file
+# x = open for write and create a new file, if file exists it will give error
+# r = open for read
+# r+ = open for read and write
+# w = open for write and truncate the file if it exists otherwise create a new file
+# w+ = open for write and read and truncate the file if it exists otherwise create a new file
+# a+ = open for write and read and append end of the file if it exists otherwise create a new file 

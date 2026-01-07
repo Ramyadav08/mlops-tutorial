@@ -1,0 +1,5 @@
+my name is ram rekha yadav
+hello ram how are you ?
+
+python3 -m venv .venv
+source .venv/bin/activate
