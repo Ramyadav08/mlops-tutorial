@@ -1,3 +1,5 @@
 /config.local
 /tmp
 /cache
+
+ dvc add DVC/data/sample.txt > this will track the file in dvc not in git so that why the u shows untracked files
