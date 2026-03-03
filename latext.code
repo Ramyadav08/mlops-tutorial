@@ -1,0 +1,195 @@
+%-------------------------
+% Resume in Latex
+% Author: Ram Rekha Yadav
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-6pt}
+}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Ram Rekha Yadav} \\ \vspace{4pt}
+    \textbf{\Large \scshape DevOps \& MLOps Engineer} \\ \vspace{4pt}
+    \small 
+    \faPhone\ +91-9904926119 ~
+    \href{mailto:ramrekhayadav81718@gmail.com}{\faEnvelope\ \underline{ramrekhayadav81718@gmail.com}} ~
+    \href{https://www.linkedin.com/in/ramrekha-yadav-4a8b21251/}{\faLinkedin\ \underline{LinkedIn}} ~
+    \href{https://github.com/Ramyadav08}{\faGithub\ \underline{GitHub}}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Summary}
+DevOps and MLOps Engineer with hands-on experience in designing scalable cloud infrastructure and automated CI/CD pipelines on AWS and GCP. Strong expertise in Kubernetes, Terraform, GitOps, observability, and DevSecOps. Experienced in building reproducible machine learning pipelines using DVC, MLflow, and Scikit-learn.
+
+%-----------SKILLS-----------
+\section{Skills}
+\textbf{Programming \& Databases:} Python, MySQL, PostgreSQL \\
+\textbf{Containers \& Orchestration:} Docker, Kubernetes (EKS, GKE), Helm \\
+\textbf{CI/CD, GitOps \& Observability:} Jenkins, GitHub Actions, Argo CD, Prometheus, Grafana, Loki, OpenTelemetry \\
+\textbf{Cloud \& IaC:} AWS, GCP, Scaleway, Terraform, Ansible \\
+\textbf{MLOps:} Scikit-learn, MLflow, DVC, Git, DAGsHub
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{DevOps Engineer}{Oct 2024 -- Present}
+{Alyssum Global Services}{Noida, India}
+\resumeItemListStart
+\resumeItem{Created Helm charts for microservices and deployed them on GKE, along with a complete monitoring stack including Prometheus, Grafana, Alertmanager, and exporters.}
+\resumeItem{Designed and evaluated blue-green deployment strategies on AWS by comparing EKS and ECS, identifying ECS/Fargate as a simpler and more cost-effective solution.}
+\resumeItem{Deployed OpenTelemetry Collector with SigNoz to achieve application and Kubernetes-level observability.}
+\resumeItem{Deployed Keycloak and Infinispan on Kubernetes using custom Helm charts and operators.}
+\resumeItem{Provisioned AWS infrastructure including VPC, EC2, ALB, Route53, CloudFront, ECS, Lambda, SNS, and EKS using Terraform modules.}
+\resumeItem{Implemented OpenTelemetry-based observability with logs in Loki, metrics in Prometheus, and traces in Tempo visualized via Grafana.}
+\resumeItem{Managed GCP infrastructure including VPC, GKE, Cloud SQL, Cloud Storage, Redis, Cloud Armor, DNS, Artifact Registry, and SSL policies using Terraform.}
+\resumeItem{Automated Terraform workflows using GitHub Actions with plan on PR and apply on merge.}
+\resumeItem{Designed a Helm library for microservices, created service Helm charts using the library, stored secrets in Secret Manager, deployed ExternalSecretOperator(ESO) and Secret Store to fetch secrets to the cluster, and set up Reloader for automatic deployment restarts on secret updates.}
+\resumeItemListEnd
+
+\resumeSubheading
+{DevOps Intern}{Feb 2024 -- Sept 2024}
+{Betaflux}{Bengaluru, India}
+\resumeItemListStart
+\resumeItem{Built AWS CodePipeline-based CI/CD workflows and achieved a 90\% performance rating.}
+\resumeItem{Deployed containerized applications on Amazon EKS using Argo CD GitOps workflows.}
+\resumeItem{Implemented Kubernetes backup and restore strategies using Velero.}
+\resumeItem{Deployed multiple microservices on AWS ECS using Terraform.}
+
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{End-to-End MLOps Project} $|$ \emph{Python, Scikit-learn, MLflow, DAGsHub, Flask}}{}
+\resumeItemListStart
+\resumeItem{Designed and implemented a production-grade ML pipeline covering the full ML lifecycle: data ingestion, validation, transformation, model training, evaluation, and inference.}
+\resumeItem{Built a config-driven, modular, and scalable architecture using \texttt{config.yaml}, \texttt{schema.yaml}, and \texttt{params.yaml}.}
+\resumeItem{Tracked experiments, parameters, metrics, and artifacts using MLflow integrated with DAGsHub for collaboration and versioning.}
+\resumeItem{Deployed trained model as a Flask-based inference service for live predictions.}
+\resumeItem{Strengthened understanding of production ML workflows, reproducibility, and deployment best practices.}
+\resumeItem{\textbf{GitHub:} \href{https://lnkd.in/gTi2hiZT}{Repository} ~|~ \textbf{DAGsHub:} \href{https://lnkd.in/gZ6Xyp7M}{Project}}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{GCP Infrastructure Automation} $|$ \emph{Terraform, GitHub Actions}}{}
+\resumeItemListStart
+\resumeItem{Provisioned VPC, GKE, Cloud SQL, Redis, DNS, Artifact Registry, and Cloud Armor across dev, stage, and prod environments.}
+\resumeItem{Implemented CI/CD pipelines using GitHub Actions for Terraform validation and deployment.}
+\resumeItemListEnd
+
+
+\resumeProjectHeading
+{\textbf{Amazon Application CI/CD} $|$ \emph{Jenkins, Docker, Terraform}}{}
+\resumeItemListStart
+\resumeItem{Built Jenkins CI/CD pipelines with Trivy, OWASP, and SonarQube integration.}
+\resumeItem{Containerized and deployed Node.js application on AWS infrastructure provisioned using Terraform.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Netflix Clone Deployment} $|$ \emph{AWS, Kubernetes, Jenkins}}{}
+\resumeItemListStart
+\resumeItem{Implemented CI/CD automation, container orchestration, security scanning, and monitoring using Grafana.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Register App GitOps Deployment} $|$ \emph{EKS, Argo CD, Jenkins}}{}
+\resumeItemListStart
+\resumeItem{Deployed application on Amazon EKS using Jenkins CI and Argo CD GitOps workflows.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Strapi CI/CD Deployment} $|$ \emph{AWS CodeCommit, CodeBuild, ECR}}{}
+\resumeItemListStart
+\resumeItem{Automated Docker image build and Kubernetes deployment using AWS-native CI/CD services.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{AWS Three-Tier Architecture}}{}
+\resumeItemListStart
+\resumeItem{Designed scalable architecture using EC2, ALB, ASG, RDS, S3, VPC, IAM, CloudWatch, CloudTrail, and SNS.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{AWS Infrastructure via Terraform Modules}}{}
+\resumeItemListStart
+\resumeItem{Provisioned VPC, EC2, ALB, Route53, CloudFront, Lambda, ECS, ECR, SQS, IAM, and RDS using Terraform.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Bachelor of Computer Science and Engineering}{2020 -- 2024}
+{RK University}{CGPA: 8.64 / 10}
+\resumeSubHeadingListEnd
+
+\end{document}
