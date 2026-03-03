@@ -18,9 +18,9 @@ class chatbook:
         elif user_input=="2":
             self.singin()
         elif user_input=="3":
-            pass
+            self.mypost()
         elif user_input=="4":
-            pass
+            self.mesg()
         else:
             exit()
             
@@ -53,11 +53,20 @@ class chatbook:
     def mypost(self):
         if self.loggedin==True:
             txt=input("write your post here->>>:")
-            print(f"you post has been successfully done{txt}")
+            print(f"you post has been successfully done:{txt}")
+            self.menu()
         else:
             print("please logged in first")
-            self.menu()
-               
-        
+            self.singin()
+            
+    def mesg(self):
+        if self.loggedin==True:
+            msg=input("write your msg here->>>:")
+            print(f"you post has been successfully done{msg}")
+        else:
+            print("please logged in first")
+            self.singin()
+            
+            
         
 obj=chatbook()
