@@ -2,6 +2,7 @@ class chatbook:
     def __init__(self):
         self.username=""
         self.password=""
+        self.loggedin=False
         self.menu()
         
     def menu(self):
@@ -40,11 +41,23 @@ class chatbook:
         else:
             uname=input("enter the username:")
             pwd=input("please enter the password:")
-            if self.username!=uname and self.password!=pwd:
-                print("Credentials are wrong,please fill the correct creds")
-                self.singin()
-            else:
+            if self.username==uname and self.password==pwd:
+                self.loggedin=True
                 print("you logged in succesfully")
+                self.menu()
+                
+            else:
+                print("please enter the valid creds")
+                self.singin()
+    
+    def mypost(self):
+        if self.loggedin==True:
+            txt=input("write your post here->>>:")
+            print(f"you post has been successfully done{txt}")
+        else:
+            print("please logged in first")
+            self.menu()
+               
         
         
 obj=chatbook()
